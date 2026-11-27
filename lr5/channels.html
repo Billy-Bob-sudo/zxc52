@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/channels.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+    <div class="header__logo">
+        <img src="img/sign.png" alt="logo">
+        <p class="header__logo-name">Видеосервис</p>
+    </div>
+    <form class="header__search">
+        <input class="header__search-txt" placeholder="Поиск..." type="text">
+        <input type="button" class="search-button" value="Найти">
+    </form>
+    <nav class="header__login">
+        <input type="button" class="login-button" popovertarget="modal" value="Войти">
+    </nav>
+  </header>
+    <div>
+        <div class="type-choose">
+            <a href="index.html" class="type-choose__ref">Фильмы</a>
+            <a href="channels.html" class="type-choose__ref type-choose__current">Телеканалы</a>
+        </div>
+    </div>
+
+        <ul class="channels">
+
+      <li class="channel">
+        <div class="channel__logo">
+            <img src="img/frst-logo.svg" alt="">
+        </div>
+        <div class="channel__info">
+          <h1 class="channel__title">Первый канал</h1>
+          <ul class="program">
+            <li><time>13:00</time><span>Новости (с субтитрами)</span></li>
+            <li><time>14:00</time><span>Давай поженимся</span></li>
+            <li><time>15:00</time><span>Другие новости</span></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="channel">
+        <div class="channel__logo">
+            <img src="img/2x2.svg" alt="">
+        </div>
+        <div class="channel__info">
+          <h2 class="channel__title">2x2</h2>
+          <ul class="program">
+            <li><time>13:00</time><span>МУЛЬТ ТВ. Сезон 4, 7 серия</span></li>
+            <li><time>14:00</time><span>ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</span></li>
+            <li><time>15:00</time><span>БУРДАШЕВ. Сезон 1, 20 серия</span></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="channel">
+        <div class="channel__logo">
+            <img src="img/rbc.svg" alt="">
+        </div>
+        <div class="channel__info">
+          <h2 class="channel__title">РБК</h2>
+          <ul class="program">
+            <li><time>13:00</time><span>ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</span></li>
+            <li><time>14:00</time><span>ДЕНЬ. Главные темы</span></li>
+            <li><time>15:00</time><span>Главные новости</span></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="channel">
+        <div class="channel__logo">
+            <img src="img/amedia.svg" alt="">
+        </div>
+        <div class="channel__info">
+          <h2 class="channel__title">AMEDIA PREMIUM</h2>
+          <ul class="program">
+            <li><time>13:00</time><span>Клиент всегда мёртв</span></li>
+            <li><time>14:00</time><span>Голодные игры: Сойка-пересмешница. Часть I</span></li>
+            <li><time>15:00</time><span>Секс в большом городе</span></li>
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+
+</div>
+  <footer class="footer">
+    <div class="container footer__inner">
+        <img src="img/Footer-logo.svg" alt="logo" class="footer__logo">
+        <div class="footer__info">
+            <p>426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+            <p style="margin-top: 6px;">+7 (3412) 93-88-61, 43-29-29</p>
+            <p class="footer__txt-web" style="font-weight: bold;">htc-cs.ru</p>
+        </div>
+    </div>
+</footer>
+
+<div class="modal" id="modal" popover>
+    <h2 class="modal__title">Вход</h2>
+    <form class="modal__form">
+        <input class="modal__txt-input" placeholder="Логин" type="text">
+        <input class="modal__txt-input" placeholder="Пароль" type="password">
+        <div class="modal__remember">
+            <input type="checkbox" id="check1" class="modal__check">
+            <label for="check1" class="modal__label">
+                <span class="checkmark">&#10004;</span>
+                Запомнить
+            </label>
+        </div>
+        <input type="button" class="login-button modal__submit" value="Войти">
+    </form>
+</div>
+</body>
+</html>
